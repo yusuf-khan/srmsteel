@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the srm theme.
+
+THEMENAME.settings:
+  type: theme_settings
+  label: 'srm settings'
