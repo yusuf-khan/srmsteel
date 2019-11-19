@@ -1,0 +1,23 @@
+<div{{ attributes.addClass('wishlist-block') }}>
+  <div class="wishlist-block__summary">
+    <a class="wishlist-block__summary__link" href="{{ url }}">
+      <span class="wishlist-block__summary__count">{{ count_text }}</span>
+    </a>
+  </div>
+  {% if wishlists %}
+  <div class="wishlist-block__contents">
+    {% for wishlist in wishlists %}
+      <table class="wishlist-block__contents__wishlist">
+        <tbody>
+          {% for item in wishlist.getItems %}
+            <tr>
+              <td style="text-align: right;">{{ item.getQuantity|number_format }} x</td>
+              <td>{{ item.label }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

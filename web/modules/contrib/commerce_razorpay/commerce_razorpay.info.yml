@@ -1,0 +1,11 @@
+name: 'Commerce Razorpay'
+description: 'Razorpay payment services integrates in to the drupal commerce payment system'
+package: 'Commerce Payment'
+# core: 8.x
+type: module
+
+# Information added by Drupal.org packaging script on 2017-11-21
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'commerce_razorpay'
+datestamp: 1511269098

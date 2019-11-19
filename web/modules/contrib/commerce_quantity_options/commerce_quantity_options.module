@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function commerce_quantity_options_views_data_alter(array &$data) {
+  $data['commerce_order_item']['edit_quantity_options']['field'] = [
+    'title' => t('Quantity options field'),
+    'help' => t('Adds an options field for editing the quantity.'),
+    'id' => 'edit_quantity_options',
+  ];
+  $data['commerce_order_item']['edit_quantity']['field']['id'] = 'edit_quantity_altered';
+}
