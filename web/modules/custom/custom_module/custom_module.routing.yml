@@ -1,0 +1,31 @@
+resume.form:
+ path: 'myform'
+ defaults:
+   _title: 'Simple form'
+   _form: '\Drupal\custom_module\Form\SimpleForm'
+ requirements:
+   _permission: 'access content'
+
+controller.form:
+ path: 'users/test'
+ defaults:
+   _title: 'Simple form'
+   _controller: '\Drupal\custom_module\Controller\FormController::create_new_user' 
+ requirements:
+   _permission: 'access content'
+
+controller.node:
+ path: 'node/test'
+ defaults:
+   _title: 'test node'
+   _controller: '\Drupal\custom_module\Controller\FormController::create_node' 
+ requirements:
+   _permission: 'access content'
+
+controller.term:
+ path: 'term/test'
+ defaults:
+   _title: 'test node'
+   _controller: '\Drupal\custom_module\Controller\FormController::create_taxonmy' 
+ requirements:
+   _permission: 'access content'

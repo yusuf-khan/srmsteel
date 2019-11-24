@@ -1,0 +1,39 @@
+<?php
+
+function custom_module_schema() {
+  $schema['form_data'] = array(
+    'fields' => array(
+      'id'=>array(
+        'type'=>'serial',
+        'not null' => TRUE,
+      ),
+      'name'=>array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ),
+      'mobilenumber'=>array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ),
+      'age'=>array(
+        'type' => 'varchar',
+        'length' => 25,
+        'not null' => TRUE,
+      ),
+      'gender'=>array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ),
+      'confirmation'=>array(
+        'type' => 'varchar',
+        'length' => 25,
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}

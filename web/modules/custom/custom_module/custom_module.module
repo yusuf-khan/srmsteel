@@ -1,0 +1,30 @@
+<?php 
+
+
+use Drupal\views\ViewExecutable;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+
+
+/**
+ * Implements hook_views_query_alter(
+ ).
+ */
+ function custom_module_views_query_alter(Drupal\views\ViewExecutable $view, Drupal\views\Plugin\views\query\Sql $query) {
+// print_r($view);exit();
+  // Only for my_view view.	
+  if ($view->id() == 'basic') {
+// kint($view);
+// print_r($view);die; 
+ }
+}
+
+function custom_module_theme($existing, $type, $theme, $path) {
+		$module_path = drupal_get_path('module','custom_module');
+  return array(
+    'block_copyright' => array(
+     'path' => $module_path . '/templates',
+     'template' => 'block--copyright',
+     'variables' => ['abc' => null],
+    ),
+  );
+}

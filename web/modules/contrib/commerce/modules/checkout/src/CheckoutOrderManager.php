@@ -49,10 +49,6 @@ class CheckoutOrderManager implements CheckoutOrderManagerInterface {
       return 'complete';
     }
     $checkout_flow = $this->getCheckoutFlow($order);
-    if (empty($checkout_flow)) {
-               drupal_set_message(t('There is no checkout flow! Make one now!'), 'error');
-               return [];
-    }
     $available_step_ids = array_keys($checkout_flow->getPlugin()->getVisibleSteps());
     $selected_step_id = $order->get('checkout_step')->value;
     $selected_step_id = $selected_step_id ?: reset($available_step_ids);

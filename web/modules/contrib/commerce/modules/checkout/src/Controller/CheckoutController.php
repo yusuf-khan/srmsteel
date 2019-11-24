@@ -89,16 +89,9 @@ class CheckoutController implements ContainerInjectionInterface {
       return new RedirectResponse($url->toString());
     }
     $checkout_flow = $this->checkoutOrderManager->getCheckoutFlow($order);
-   /* $checkout_flow_plugin = $checkout_flow->getPlugin();
+    $checkout_flow_plugin = $checkout_flow->getPlugin();
 
-    return $this->formBuilder->getForm($checkout_flow_plugin, $step_id);*/
-      if (!empty($checkout_flow)) {
-                $checkout_flow_plugin = $checkout_flow->getPlugin();
-                return $this->formBuilder->getForm($checkout_flow_plugin, $step_id);
-    }
-          else {
-               return [];
-    }
+    return $this->formBuilder->getForm($checkout_flow_plugin, $step_id);
   }
 
   /**
