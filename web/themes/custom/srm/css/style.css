@@ -1,4 +1,544 @@
-/**
- * If using a CSS pre-processor, tell it to overwrite this file. If not, place
- * your custom CSS modifications here.
- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.l-heading{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size:2rem;
+  color: #333;
+}
+
+.m-heading{
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size:2rem;
+  color: #333;
+}
+
+.bottom-line{
+  width: 6rem;
+  height: 3px;
+  background: #666;
+  margin: 0 auto 3rem auto;
+}
+
+#main-nav{
+  height: 90px;
+  padding: 4rem 0;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #0066cc;
+  z-index: 3;
+}
+
+#main-nav .container{
+display: flex;
+justify-content: space-between;
+height: 100%;
+align-items: center; 
+}
+
+.site-logo{
+  width: 20%;
+}
+
+.site-logo img{
+  width: 100%;
+}
+
+.nav-div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.nav-div a{
+  text-decoration: none;
+}
+
+.help{
+  display: flex;
+  flex-direction: row-reverse;
+  list-style: none;
+}
+
+.nav-list-item1{
+  padding: 0 1rem;
+}
+
+
+.nav-list{
+  display: flex;
+  list-style: none;
+}
+
+.select select{
+  padding: 0.2rem;
+  font-size: .8rem;
+}
+
+.nav-list-item{
+  padding: 0 1rem;
+}
+
+.nav-list-item-link{
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: 400;
+}
+
+.nav-list-item-link:hover{
+  color: #333;
+}
+
+.card{
+  border: 2px solid #666;
+  transition: all 0.3s ease-in-out;
+}
+
+.card a{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card:hover{
+  border: 2px solid #ffcc00;
+}
+
+.prod-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.prod-text{
+  text-align: center;
+  padding: 0 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.prod-btn{
+  text-align: center;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 0 auto;
+  background: #0066cc;
+  color: #fff;
+  padding: 0.3rem 1.2rem;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #0066cc;
+  margin: 0 ;
+  font-size: 0.8rem;
+}
+
+.prod-btn:hover{
+  color: #0066cc;
+  background: #fff;
+  border: 1px solid #0066cc;
+}
+
+.prod-btn1{
+  text-align: center;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 0 auto;
+  background: #fff;
+  color: #0066cc;
+  padding: 0.3rem .7rem;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #0066cc;
+  margin: 0 ;
+  font-size: 0.8rem;
+}
+
+.prod-btn1:hover{
+  color: #fff;
+  background: #0066cc;
+  border: 1px solid #0066cc;
+}
+
+#features{
+  background-color: #c4c4c4;
+}
+
+.box i{
+  border: 1px solid #0066cc;
+  color: #0066cc;
+  font-size: 36px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  line-height: 70px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.feature-heading{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem
+}
+
+.feature-text{
+  font-size: 0.9rem;
+  padding: 0 2rem;
+  line-height: 1.6;
+}
+
+.clients{
+  width: 100%;
+  height: 260px;
+  border:1px solid #0066cc;
+  background: #ffcc00;
+  padding: 2rem ;
+  position: relative;
+}
+
+.avatar{
+  border-radius: 50%;
+  height:80px;
+  width: 80px;
+  border: 1px solid #0066cc;
+  display: block;
+  margin-top: -4.5rem
+}
+
+.clients-name{
+  margin:2rem 0;
+}
+
+.client-text{
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.clients i{
+  position: absolute;
+  display: block;
+  font-size: 3rem;
+  color: #0066cc;
+  top: 10%;
+  left: 85%;
+}
+
+#footer{
+  background: #333;
+  color: #fff;
+}
+
+#footer a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-list{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.social-list-item{
+  padding: 0 0.7rem;
+}
+
+.social-list-item-link i{
+  display: inline-block;
+  height: 30px;
+  width:30px;
+  font-size: 0.8rem;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  background: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-list-item-link i:hover{
+  background: #ffcc00;
+  color: #000;
+}
+
+/* PRODUCT REALEDGE */
+#realedge{
+  background: url('../img/real-edge-f0o33m.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#realedge a{
+  text-decoration: none;
+}
+
+#realedge .container{
+  height: 100%;
+}
+
+.realedge-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  padding-top:15% ;
+}
+
+.banner-heading{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:4.5rem;
+}
+
+.banner-text{
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-left: .5rem;
+}
+
+.banner-btn{
+  color:#333;
+  display: inline-block;
+  padding: .3rem .8rem;
+  margin: 1rem 1rem 1rem 0;
+  border: 1px solid #ffcc00;
+  background: #ffcc00;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:0.9rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner-btn:hover{
+  background: transparent;
+  color: #ffcc00;
+}
+
+.banner-btn1{
+  background:transparent;
+  display: inline-block;
+  padding: .3rem .8rem;
+  margin: 1rem 1rem 1rem 0;
+  border: 1px solid #ffcc00;
+  color: #ffcc00;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:0.9rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner-btn1:hover{
+  background: #ffcc00;
+  color: #333;
+}
+
+.prod-img{
+  width: 100%;
+}
+
+.prod-img img{
+  width: 100%
+}
+
+.prod-list{
+  list-style: none;
+}
+.prod-list-item{
+  word-spacing: 2px;
+}
+
+.prod-list-item i{
+  color: #0066cc;
+}
+
+.detailing i{
+  display: inline-block;
+  margin-right: .5rem;
+  color: #0066cc;
+}
+
+/* REALRING */
+
+#realring{
+  background: url('../img/real-ring-m5e8z5.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#realring a{
+  text-decoration: none;
+}
+
+/* TMT BAR */
+#prod-spec{
+  background: #c4c4c4;
+}
+
+.prod-box{
+  background: #ffcc00;
+  border: 1px solid #666666;
+  padding: .5rem 0;
+  width: 107%;
+}
+.prod-spec-heading{
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: .5rem;
+}
+
+.prod-spec-title{
+  background: #0066cc;
+  /* margin-left: 1rem; */
+  border: 1px solid #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.prod-spec-details{
+  display: flex;
+  width: 107.1%;
+}
+.prod-spec-desc{
+  display: flex;
+  width: 107%;
+}
+
+.prod-spec-details-info{
+  background: #fff;
+  border: 1px solid #333;
+  border-top: none;
+  color: #666;
+  padding: .2rem;
+}
+
+#registration{
+  background: #c4c4c4;
+}
+
+.signup{
+  background: #fff;
+  text-align: center;
+}
+
+.user-icon{
+  background: #0066cc;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.user-icon i{
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.user-info{
+  padding: 2rem 3rem;
+}
+
+.login-info{
+  padding-bottom: 4.2rem;
+}
+.user-info a{
+  text-decoration: none;
+}
+
+.user-info i{
+  display: inline-block;
+  margin-right: .3rem;
+  height: 100%;
+  width: 10px;
+}
+
+form #name, form #pass{
+  padding: 1.5rem 1rem;
+}
+
+.form-btn{
+  display: block;
+  width: 100%;
+  border: none;
+  padding: .5rem;
+  background: #ffcc00;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+.form-btn1{
+  display: inline-block;
+  padding: .5rem 1rem;
+  background: #0066cc;
+  color: #fff;
+  font-size: .8rem;
+  margin: 0 1rem;
+}
+.form-btn2{
+  display: inline-block;
+  padding: .5rem 1rem;
+  background: #ff0017;
+  color: #fff;
+  font-size: .8rem;
+  margin: 0 1rem;
+}
+
+.form-btn1:hover,.form-btn2:hover{
+  color: #fff;
+}
+
+.form-list{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.form-list li a{
+  color: #333;
+}
+
+@media (min-width: 1024px){
+  .prod-box{
+    background: #ffcc00;
+    border: 1px solid #666666;
+    padding: .5rem 0;
+    width: 108%;
+  }
+  
+  .prod-spec-details{
+    display: flex;
+    width: 108%;
+  }
+  .prod-spec-desc{
+    display: flex;
+    width: 108%;
+  }
+}

@@ -43,6 +43,8 @@
         "drupal/slick": "^1.1",
         "drupal/slick_extras": "^1.0@RC",
         "drupal/slick_views": "^2.0",
+        "drupal/social_api": "~2.0",
+        "drupal/social_auth": "~2.0",
         "drupal/swiftmailer": "~1.0",
         "drupal/token": "~1.0",
         "drupalcommerce/commerce_base": "dev-8.x-1.x",
