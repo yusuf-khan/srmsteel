@@ -41,4 +41,17 @@ function srm_preprocess_region(&$variables) {
   $menu = $menu_tree->build($tree);
 $variables['menu'] = $menu;
 
+  $block = \Drupal\block\Entity\Block::load('srm_search');
+  $variables['search'] = \Drupal::entityTypeManager()
+  ->getViewBuilder('block')
+  ->view($block);
+
+   $block = \Drupal\block\Entity\Block::load('dropdownlanguage');
+  $variables['srm_languageswitcher'] = \Drupal::entityTypeManager()
+  ->getViewBuilder('block')
+  ->view($block);
+
+
+
+
 }

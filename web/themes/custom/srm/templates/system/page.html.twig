@@ -62,11 +62,8 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
       {% if not navbar_attributes.hasClass(container) %}
-        <div class="{{ container }}">
       {% endif %}
-      <div class="navbar-header">
         {{ page.navigation }}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
         {% if page.navigation_collapsible %}
@@ -77,7 +74,6 @@
             <span class="icon-bar"></span>
           </button>
         {% endif %}
-      </div>
 
       {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
@@ -86,9 +82,7 @@
         </div>
       {% endif %}
       {% if not navbar_attributes.hasClass(container) %}
-        </div>
       {% endif %}
-    </header>
   {% endblock %}
 {% endif %}
 
@@ -161,8 +155,6 @@
 
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
       {{ page.footer }}
-    </footer>
   {% endblock %}
 {% endif %}

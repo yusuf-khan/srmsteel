@@ -38,6 +38,7 @@
         "drupal/commerce": "~2.0",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
+        "drupal/dropdown_language": "^2.3",
         "drupal/owlcarousel2": "^1.0@RC",
         "drupal/search_api": "~1.0",
         "drupal/slick": "^1.1",
