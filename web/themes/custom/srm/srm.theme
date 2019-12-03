@@ -46,12 +46,41 @@ $variables['menu'] = $menu;
   ->getViewBuilder('block')
   ->view($block);
 
-   $block = \Drupal\block\Entity\Block::load('dropdownlanguage');
+   $block = \Drupal\block\Entity\Block::load('srm_languageswitcher');
   $variables['srm_languageswitcher'] = \Drupal::entityTypeManager()
   ->getViewBuilder('block')
   ->view($block);
 
 
+
+
+}
+
+
+
+/**
+ * Use language code for the language switcher
+ *
+ * @param $variables
+ */
+function srm_preprocess_links__language_block(&$variables) {
+
+  foreach ($variables['links'] as $i => $link) {
+    /** @var \Drupal\language\Entity\ConfigurableLanguage $linkLanguage */
+    $linkLanguage = $link['link']['#options']['language'];
+    $variables['links'][$i]['link']['#title'] = $linkLanguage->get('id');
+  }
+}
+
+
+function srm_preprocess_commerce_product__realedge(&$variables) {
+$date = date("Y");
+ $variables['date'] = $date;
+
+$variables['feature'] = views_embed_view('paragraph_view', 'block_2');
+$variables['view_paragraph'] = views_embed_view('paragraph_view', 'block_1');
+
+$variables['our_customer'] = views_embed_view('homepage_blocks', 'block_2');
 
 
 }
