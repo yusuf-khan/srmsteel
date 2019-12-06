@@ -3,7 +3,7 @@
 
 use Drupal\views\ViewExecutable;
 use Drupal\views\Plugin\views\query\QueryPluginBase;
-
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_views_query_alter(
@@ -28,3 +28,12 @@ function custom_module_theme($existing, $type, $theme, $path) {
     ),
   );
 }
+
+// function custom_module_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+//   // Adding custom validation for the welcome page type field.
+//   if ($form_id == 'user-register-form') {
+//     echo 'hiiii';
+//    unset($form['mail']);
+//   }
+// }
