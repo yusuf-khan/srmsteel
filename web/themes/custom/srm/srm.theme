@@ -85,6 +85,18 @@ $variables['our_customer'] = views_embed_view('homepage_blocks', 'block_2');
 
 }
 
+function srm_preprocess_commerce_product__tmt_bars(&$variables) {
+$date = date("Y");
+ $variables['date'] = $date;
+
+$variables['feature'] = views_embed_view('paragraph_view', 'block_2');
+$variables['view_paragraph'] = views_embed_view('paragraph_view', 'block_3');
+
+$variables['our_customer'] = views_embed_view('homepage_blocks', 'block_2');
+
+
+}
+
 function srm_preprocess_commerce_product__realring(&$variables) {
 $date = date("Y");
  $variables['date'] = $date;

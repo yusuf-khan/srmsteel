@@ -1,0 +1,38 @@
+<div class="detailing">
+            <h6 class="font-weight-bold">{{ 'Grades Offered'|t }}</h6>
+    <div class="row">
+
+{% if label_hidden %}
+  {% if multiple %}
+   
+      {% for item in items %}
+       <div class="col-4 mb-3">
+                <i class="fas fa-check"></i><span>
+        {{ item.content }}</span>
+      </div>
+      {% endfor %}
+    
+  {% else %}
+    {% for item in items %}
+      {{ item.content }}
+    {% endfor %}
+  {% endif %}
+{% else %}
+ 
+   {{ label }}
+    {% if multiple %}
+     
+    {% endif %}
+    {% for item in items %}
+    <div class="col-4 mb-3">
+                <i class="fas fa-check"></i><span>
+      {{ item.content }}</span>
+      </div>
+    {% endfor %}
+    {% if multiple %}
+     
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
