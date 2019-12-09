@@ -24,6 +24,8 @@
     <div class="container">
       <h2 class="m-heading">{{ 'What Our Customers Say'|t }}</h2>
       <div class="bottom-line"></div>
+            <div class="row text-center">
+
 {% for row in rows %}
   {%
     set row_classes = [
@@ -34,5 +36,6 @@
     {{- row.content -}}
   </div>
 {% endfor %}
+</div>
 </div>
 </section>
