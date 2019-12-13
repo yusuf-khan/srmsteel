@@ -35,6 +35,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/bootstrap": "^3.20",
         "drupal/commerce": "~2.0",
+        "drupal/commerce_add_to_cart_link": "^1.0",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
         "drupal/dropdown_language": "^2.3",

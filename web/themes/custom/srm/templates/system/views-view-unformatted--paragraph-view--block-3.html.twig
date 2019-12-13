@@ -20,14 +20,16 @@
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-<section id="testimonials" class="py-5">
+
+
+  <section id="features" class="py-5">
     <div class="container">
-      <h2 class="m-heading">{{ 'What Our Customers Say'|t }}</h2>
+      <h2 class="l-heading">{{ 'Product Benefits'|t }}</h2>
       <div class="bottom-line"></div>
-            <div class="row text-center">
+      <div class="row text-center">
 {% for row in rows %}
     {{- row.content -}}
 {% endfor %}
-</div>
-</div>
-</section>
+      </div>
+    </div>
+  </section>

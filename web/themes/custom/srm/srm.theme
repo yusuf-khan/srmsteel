@@ -52,8 +52,6 @@ $variables['menu'] = $menu;
   ->view($block);
 
 
-
-
 }
 
 
@@ -63,14 +61,14 @@ $variables['menu'] = $menu;
  *
  * @param $variables
  */
-function srm_preprocess_links__language_block(&$variables) {
+// function srm_preprocess_links__language_block(&$variables) {
 
-  foreach ($variables['links'] as $i => $link) {
-    /** @var \Drupal\language\Entity\ConfigurableLanguage $linkLanguage */
-    $linkLanguage = $link['link']['#options']['language'];
-    $variables['links'][$i]['link']['#title'] = $linkLanguage->get('id');
-  }
-}
+//   foreach ($variables['links'] as $i => $link) {
+//     * @var \Drupal\language\Entity\ConfigurableLanguage $linkLanguage 
+//     $linkLanguage = $link['link']['#options']['language'];
+//     $variables['links'][$i]['link']['#title'] = $linkLanguage->get('id');
+//   }
+// }
 
 
 function srm_preprocess_commerce_product__realedge(&$variables) {
@@ -90,7 +88,7 @@ $date = date("Y");
  $variables['date'] = $date;
 
 $variables['feature'] = views_embed_view('paragraph_view', 'block_2');
-$variables['view_paragraph'] = views_embed_view('paragraph_view', 'block_3');
+$variables['view_paragraph'] = views_embed_view('paragraph_view', 'block_4');
 
 $variables['our_customer'] = views_embed_view('homepage_blocks', 'block_2');
 
@@ -157,4 +155,15 @@ function srm_preprocess_node(&$variables){
  $variables['bandhan_faq'] = views_embed_view('faq_type', 'block_2');
 
  $variables['payment_faq'] = views_embed_view('faq_type', 'block_3');
+}
+
+
+
+/**
+* Implements hook_preprocess_page(&$variables)
+*/
+function srm_preprocess_page(&$variables) {
+  if (\Drupal::service('path.matcher')->isFrontPage() == 1) {
+    $variables['#attached']['library'][] = 'srm/slick';
+  }
 }
