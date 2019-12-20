@@ -89,8 +89,8 @@ $date = date("Y");
 
 $variables['feature'] = views_embed_view('paragraph_view', 'block_2');
 $variables['view_paragraph'] = views_embed_view('paragraph_view', 'block_4');
-
 $variables['our_customer'] = views_embed_view('homepage_blocks', 'block_2');
+$variables['prod_spec'] = views_embed_view('paragraph_view', 'block_5');
 
 
 }

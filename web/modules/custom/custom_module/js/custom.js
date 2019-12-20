@@ -1,4 +1,4 @@
-
+alert('f');
 (function ($) {
   $('.col-md-6').slick({
     infinite: false,
