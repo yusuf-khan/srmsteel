@@ -542,3 +542,16 @@ form #name, form #pass{
     width: 108%;
   }
 }
+
+#edit-submit {    
+  display: block;
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    background: #ffcc00;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}

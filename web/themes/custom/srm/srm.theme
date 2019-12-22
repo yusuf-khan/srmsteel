@@ -116,7 +116,7 @@ $entity = \Drupal::entityManager()
 
   $form = \Drupal::formBuilder()->getForm($formObject);
   $variables['register_form'] = $form;
-global $base_url;
+  global $base_url;
 // kint($base_url);
 $variables['base_url'] = $base_url;
 
@@ -124,6 +124,7 @@ $variables['base_url'] = $base_url;
 
 
 function srm_preprocess_form__user_register_form(&$variables) {
+ global $base_url;
 $variables['base_url'] = $base_url;
 
 }

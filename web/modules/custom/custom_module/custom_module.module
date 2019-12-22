@@ -16,9 +16,14 @@ function custom_module_theme($existing, $type, $theme, $path) {
     ),
   );
 }
-function custom_module_form_alter(&$form, $form_state, $form_id) {
-  if ($form_id == 'user_login_block') {
-    print_r($form['links']);exit();
-    unset($form['links']);
+
+
+function custom_module_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+    if ($form_id == 'user_login_form') {
+    $form['actions']['submit']['#value'] = t('SIGN IN');
+  }
+
+  if ($form_id == 'user_register_form') {
+    $form['actions']['submit']['#value'] = t('CREATE ACCOUNT');
   }
 }
