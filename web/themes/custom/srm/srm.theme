@@ -125,7 +125,7 @@ $variables['base_url'] = $base_url;
 
 function srm_preprocess_form__user_register_form(&$variables) {
  global $base_url;
-$variables['base_url'] = $base_url;
+ $variables['base_url'] = $base_url;
 
 }
 
@@ -167,4 +167,13 @@ function srm_preprocess_page(&$variables) {
   if (\Drupal::service('path.matcher')->isFrontPage() == 1) {
     $variables['#attached']['library'][] = 'srm/slick';
   }
+}
+/**
+ * Implements hook_preprocess_node().
+ */
+function srm_preprocess_menu(&$variables)
+{    
+      global $base_url;
+      $variables['base_url'] = $base_url.'/search';
+
 }

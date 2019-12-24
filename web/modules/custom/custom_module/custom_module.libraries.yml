@@ -1,9 +1,0 @@
-slick:
-  css:
-    theme:
-      css/slick.css: {}
-      css/slick-theme.css: {}
-      css.custom.css: {}
-  js:
-    js/slick.min.js: {}
-    js/custom.js: {}

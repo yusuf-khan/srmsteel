@@ -1,0 +1,9 @@
+slick:
+  css:
+    theme:
+      css/slick.css: {}
+      css/slick-theme.css: {}
+      css.custom_front.css: {}
+  js:
+    js/slick.min.js: {}
+    js/custom_front.js: {}

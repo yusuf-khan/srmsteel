@@ -3,9 +3,9 @@
 /drush/contrib/
 /vendor/
 /web/core/
-/web/modules/contrib/
-/web/themes/contrib/
-/web/profiles/contrib/
+# /web/modules/contrib/
+# /web/themes/contrib/
+# /web/profiles/contrib/
 
 # Ignore sensitive information
 /web/sites/*/settings.php

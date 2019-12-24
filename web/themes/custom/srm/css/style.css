@@ -555,3 +555,8 @@ form #name, form #pass{
     margin: 1rem 0;
     border-radius: 5px;
 }
+
+
+.my-test-class .col-md-6 {
+  max-width: 100% !important;
+ }
