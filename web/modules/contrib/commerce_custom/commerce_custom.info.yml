@@ -1,6 +1,0 @@
-name: 'Commerce PayAbbhi'
-description: 'PayAbbhi payment services integrates'
-package: 'Commerce PayAbbhi'
-core: 8.x
-type: module
-

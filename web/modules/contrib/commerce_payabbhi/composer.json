@@ -1,0 +1,5 @@
+{
+    "require": {
+        "payabbhi/payabbhi-php": "@stable"
+    }
+}

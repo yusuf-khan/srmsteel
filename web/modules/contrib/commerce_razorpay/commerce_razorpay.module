@@ -1,8 +1,0 @@
-<?php
-
-/**
- * @file
- * Serve as Payment Gateway provided by Razorpay.
- */
-
-define('COMMERCE_PAYMENT_STATUS_SUCCESS', 'success');
