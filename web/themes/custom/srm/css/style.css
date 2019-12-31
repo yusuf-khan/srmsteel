@@ -602,6 +602,6 @@ form #name, form #pass{
 
 .js-form-item-persistent-login{
   position: absolute;
-  bottom: 320px;
-  color: 081025;
+  bottom: 75px;
+  color: black;
 }

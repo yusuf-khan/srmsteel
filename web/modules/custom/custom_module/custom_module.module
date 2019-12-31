@@ -25,7 +25,8 @@ function custom_module_form_alter(array &$form, FormStateInterface $form_state, 
 
   if ($form_id == 'user_register_form') {
     $form['account']['mail']['#required'] = FALSE;
-    unset($form['account']['mail']);
+    $form['account']['mail']['#access'] = FALSE;
+
     $form['account']['pass']['#type'] = 'password';
     $form['account']['pass']['#type'] = 'password';
     $form['account']['pass']['#title'] = 'Password'; 
