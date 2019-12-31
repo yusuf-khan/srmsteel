@@ -31,7 +31,7 @@
           'merchant_order_id': merchant_order_id
         },
         'theme': {
-          'color': '#F37254',
+          'color': '#fd698c',
           'emi_mode': true
         }
       };

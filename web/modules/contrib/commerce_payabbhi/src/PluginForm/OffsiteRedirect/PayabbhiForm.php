@@ -62,7 +62,7 @@ class PayabbhiForm extends BasePaymentOffsiteForm {
     $form['#attached']['drupalSettings']['commerce_razorpay'] = array(
       'amount' => $amount,
       'key' => $key_id,
-      'logo' => $base_url . "/" . drupal_get_path('module', 'commerce_payabbhi') . '/logo.jpg',
+      'logo' => $base_url . "/" . drupal_get_path('module', 'commerce_payabbhi') . '/paylogo.svg',
       'order_id' => $merchant_order_id,
       'commerce_order_id' => $order_id,
       'payment_settings' => $payment_method,

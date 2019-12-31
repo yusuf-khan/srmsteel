@@ -29,5 +29,6 @@ $('>li a', this).each(function(){
 });
 list.remove();
 });
+  $(".button--add-to-cart.button").text("BUY NOW");
 });
            

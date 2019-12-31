@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49.8 65.1" style="enable-background:new 0 0 49.8 65.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#EAEAEA;}
+	.st2{fill:url(#SVGID_2_);}
+</style>
+<title>Artboard 19</title>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="9.53" y1="48.8025" x2="45.62" y2="48.8025" gradientTransform="matrix(1 0 0 -1 0 66)">
+	<stop offset="0" style="stop-color:#FE9990"/>
+	<stop offset="0.48" style="stop-color:#FB75B0"/>
+	<stop offset="1" style="stop-color:#C67AD1"/>
+</linearGradient>
+<path class="st0" d="M27.6,13.2c7.2,0,13,5.8,13,13c0,0,0,0,0,0h5c0-10-8.1-18-18-18s-18,8.1-18,18h5C14.5,19,20.3,13.2,27.6,13.2  C27.5,13.2,27.5,13.2,27.6,13.2z"/>
+<polygon class="st1" points="24.6,55.3 24.6,60.3 9.5,60.3 9.5,55.3 14.5,55.3 14.5,13.2 9.5,13.2 9.5,8.2 19.5,8.2 19.5,55.3 "/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="9.44" y1="30.7575" x2="45.53" y2="30.7575" gradientTransform="matrix(1 0 0 -1 0 66)">
+	<stop offset="0" style="stop-color:#FE9990"/>
+	<stop offset="0.48" style="stop-color:#FB75B0"/>
+	<stop offset="1" style="stop-color:#C67AD1"/>
+</linearGradient>
+<path class="st2" d="M27.5,39.2c-7.2,0-13-5.8-13-13h-5c0,10,8.1,18,18,18s18-8.1,18-18h-5C40.6,33.4,34.8,39.2,27.5,39.2  C27.5,39.2,27.5,39.2,27.5,39.2z"/>
+</svg>

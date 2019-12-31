@@ -171,9 +171,9 @@ function srm_preprocess_page(&$variables) {
 /**
  * Implements hook_preprocess_node().
  */
-function srm_preprocess_menu(&$variables)
+function srm_preprocess_menu__main(&$variables)
 {    
       global $base_url;
       $variables['base_url'] = $base_url.'/search';
-
+      $variables['abc'] = '/search';
 }
