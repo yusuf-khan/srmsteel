@@ -710,7 +710,7 @@ float: right;
   width: 100%;
   background-color: #F4F4F4;
   height: 100%;
-  padding: 30px 20px 30px 20px;
+  padding: 50px 50px 50px 50px;
 }
 .about-mission strong{
 font-size: 20px;
@@ -791,4 +791,56 @@ background:
   height: 100%;
   padding: 30px 20px 30px 20px;
     
+}
+
+
+.about-core .row-wrapper{
+  margin-left: 329px;
+}
+
+.about-core .col-lg-4 {
+    max-width: 33.333333%;
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+}
+
+.site-page-container {
+  width: 100%;
+  background-color: #F4F4F4;
+  height: 100%;
+  padding: 50px 50px 50px 50px;
+}
+
+.site-page-title{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #081025;
+}
+
+.bottom-line-1 {
+  height: 4px;
+  background: #c4c4c4;
+  margin: 0 auto 3rem auto;
+
+}
+
+.site-page-title::after {
+ padding-bottom: 4px; 
+  }
+
+  .l-heading1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1emr;
+    color: #081025;
+    padding-bottom: 12px;
+}
+
+.site-page-b0dy p {
+line-height: 28px;
+    font-size: 16px;
+    color: #888;
+  
 }
